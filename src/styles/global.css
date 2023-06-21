@@ -40,3 +40,8 @@ body {
     padding: 1rem;
     line-height: 1.5;
 }
+
+html.dark {
+    background-color: #3c3c3c;
+    color: #fff;
+}
