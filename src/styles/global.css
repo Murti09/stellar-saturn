@@ -1,5 +1,42 @@
 h1 {
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+html {
+    background-color: rgb(255, 246, 233);
+}
+
+header {
+    text-align: center;
+
+}
+
+.nav-link {
+    font-size: 25px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    background-color: white;
+    padding: 7px;
+    color: black;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.nav-link a:hover {
+    color: lightblue;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
 }

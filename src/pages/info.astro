@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+const pageTitle = "Information";
+const identity = {
+    firstName: "Murat",
+    lastName: "Güler",
+    school: "FOS",
+};
+const skills = ["Html", "Css", "JavaScript", "Astro"];
+
+const skillColor = "blue";
+const fontWeight = "bold";
+const textCase = "uppercase";
+---
+
+<Layout pageTitle={pageTitle}>
+    <h2>{pageTitle}</h2>
+
+    <p>Mein Name ist {identity.firstName} {identity.lastName} und ich geh auf die {identity.school} in Kempten</p>
+
+    <p>Ich versuche folgendes zu lernen:</p>
+
+    <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+
+</Layout>
+
+<style define:vars={{skillColor, fontWeight, textCase}}>
+
+    .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+    }
+
+</style>
