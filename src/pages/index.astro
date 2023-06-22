@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import { Image } from "astro:assets"
 import sterne from "../assets/sterne.jpg"
 const pageTitle ="Startseite"
 ---
@@ -19,7 +20,7 @@ const pageTitle ="Startseite"
 		dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
 		Lorem ipsum dolor sit amet.</p>
 
-		<img src={sterne.src} width={sterne.width} height={sterne.height} alt="Viele Sterne" />
+		<Image src={sterne} width={200} alt="Viele Sterne" />
 
 
 </Layout>

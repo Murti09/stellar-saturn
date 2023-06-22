@@ -1,9 +1,9 @@
 ---
 const { platform, username } = Astro.props;
-import "../styles/global.css"
+const url = 'https://www.' + platform + '.com/' + username;
 ---
 
-<a href={"https://www.${platform}.com/${username}"}>{platform}</a>
+<a href={url}>{platform}</a>
 
 <style>
     a {
