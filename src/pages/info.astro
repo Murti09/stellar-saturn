@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
-
+import { Image } from "astro:assets"
+import htmlcss from "../assets/htmlcss.png"
 const pageTitle = "Information";
 const identity = {
     firstName: "Murat",
@@ -24,6 +25,8 @@ const textCase = "uppercase";
     <ul style="list-style-type: none;">
         {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
+
+    <Image src={htmlcss} width={200} alt="HTML und CSS" />
 
 </Layout>
 
