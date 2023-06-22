@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import sterne from "../assets/sterne.jpg"
 const pageTitle ="Startseite"
 ---
 
@@ -15,6 +16,10 @@ const pageTitle ="Startseite"
 		ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing 
 		elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
 		aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
-		dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+		dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+		Lorem ipsum dolor sit amet.</p>
+
+		<img src={sterne.src} width={sterne.width} height={sterne.height} alt="Viele Sterne" />
+
 
 </Layout>
