@@ -1,6 +1,6 @@
 ---
 title: 'Erster Blog Post'
-pubDate: 2023-06-21
+pubDate: 21.06.2023
 description: 'Das ist mein erster Blog'
 author: 'Murat'
 tags: ["Website", "Erstellen"]

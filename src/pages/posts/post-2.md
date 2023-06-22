@@ -1,6 +1,6 @@
 ---
 title: 'Zweiter Blog Post'
-pubDate: 2023-06-21
+pubDate: 21.06.2023
 description: 'Ich lerne wie man eine Webseite erstellt'
 author: 'Murat'
 tags: ["Elemente", "Astro", "Lernen"]

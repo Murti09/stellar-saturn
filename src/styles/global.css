@@ -17,6 +17,11 @@ header {
 
 .nav-link {
     font-size: 25px;
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    display: none;
+    margin: 0;
 }
 
 .nav-link a {
@@ -33,6 +38,41 @@ header {
     color: lightblue;
 }
 
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.expanded {
+    display: unset;
+}
+
+@media screen and (min-width: 636px) {
+    .nav-link {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .nav-links a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
 body {
     margin: 0 auto;
     width: 100%;
@@ -42,6 +82,6 @@ body {
 }
 
 html.dark {
-    background-color: #3c3c3c;
+    background-color: #626059;
     color: #fff;
 }
