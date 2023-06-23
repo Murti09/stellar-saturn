@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@fontsource/bangers": "^5.0.3",
+    "@fontsource/creepster": "^5.0.3",
     "@fontsource/esteban": "^5.0.3",
+    "@fontsource/handlee": "^5.0.3",
     "@fontsource/schoolbell": "^5.0.3",
+    "@fontsource/swanky-and-moo-moo": "^5.0.3",
     "astro": "^2.6.6"
   }
 }

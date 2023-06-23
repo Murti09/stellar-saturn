@@ -1,6 +1,7 @@
 ---
 const { frontmatter } = Astro.props;
 import Layout from "./Layout.astro";
+import '@fontsource/swanky-and-moo-moo';
 ---
 
 <Layout pageTitle={frontmatter.title}>
@@ -8,5 +9,15 @@ import Layout from "./Layout.astro";
     <p><em style="font-size: large;">{frontmatter.description}</em></p>
     <p>Von: {frontmatter.author}</p>
 
+    <div class="mdfont">
         <slot />
+    </div>
+        
 </Layout>
+
+<style>
+    .mdfont{
+        font-family: 'Swanky and Moo Moo', sans-serif;
+        font-size: 20pt;
+    }
+</style>
