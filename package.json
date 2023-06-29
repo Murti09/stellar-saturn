@@ -16,6 +16,9 @@
     "@fontsource/handlee": "^5.0.3",
     "@fontsource/schoolbell": "^5.0.3",
     "@fontsource/swanky-and-moo-moo": "^5.0.3",
-    "astro": "^2.6.6"
+    "canvas-confetti": "^1.6.0"
+  },
+  "devDependencies": {
+    "astro": "^2.7.2"
   }
 }
