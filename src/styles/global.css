@@ -81,3 +81,32 @@ html.dark {
     background-color: #4d4c48;
     color: #fff;
 }
+
+.center{
+		text-align: center;
+        margin-top: 20px;
+	}
+
+	button {
+		background-color: black;
+		color: white;
+		border: none;
+		border-radius: 20px;
+		box-shadow: 0px 0px 2px 2px rgb(0 0 0);
+		height: 50px;
+		width: 100px;
+	}
+
+	button:hover {
+		color: lightblue;
+		height: 70px;
+		width: 120px;
+		font-size: 18px;
+		transform: rotate(360deg);
+		transition: 1s;
+	}
+
+	button:not(:hover){
+	transition:0.4s;
+	transform: rotate();
+	}

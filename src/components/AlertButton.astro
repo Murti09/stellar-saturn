@@ -1,0 +1,11 @@
+<button class="alert">Alarm!</button>
+
+<script>
+    const buttons = document.querySelectorAll('button.alert');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            alert('Button wurde angeklickt!');
+        });
+    });
+</script>
