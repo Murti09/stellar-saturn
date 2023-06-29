@@ -1,0 +1,57 @@
+<astro-heart>
+    <button aria-label="Heart">💜 × <span id="counterNumber">0</span></button>  
+</astro-heart>
+
+<script>
+
+    class AstroHeart extends HTMLElement {
+        constructor() {
+            super();
+            let count: any = 0;
+
+            const HeartButton = this.querySelector('button');
+            const countSpan = this.querySelector('#counterNumber');
+
+            if (countSpan) {
+                console.log("Element exists");
+                HeartButton?.addEventListener('click', () => {
+                    count++;
+                    countSpan.textContent = count;
+                });
+            } 
+            else {
+                console.log("Element does not exist");
+            }
+
+            
+        }
+    }
+
+    customElements.define('astro-heart', AstroHeart);
+</script>
+
+<style>
+    button {
+		background-color: lightblue;
+		border: none;
+		border-radius: 20px;
+		box-shadow: 0px 0px 2px 2px rgb(0 0 0);
+		height: 50px;
+		width: 100px;
+	}
+
+	button:hover {
+		font-weight: bolder;
+		height: 70px;
+		width: 120px;
+		font-size: 18px;
+		transform: scale(1);
+		transition: 1s;
+        color: red;
+	}
+
+	button:not(:hover){
+	transition: 1s;
+	transform: scale();
+	}
+</style>
